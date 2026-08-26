@@ -8,18 +8,20 @@ USE_EB =FALSE
 PRECISION     = DOUBLE
 DEBUG	      = TRUE
 DEBUG	      = FALSE
-DIM	      = 3
+DIM	      = 2
 #DIM	       = 2
 #DIM           = 1
 COMP          = g++
 #USE_MPI       = TRUE 
-USE_MPI       = FALSE
+USE_MPI       = TRUE
+USE_HDF5    = TRUE
 #
 # Base name of the executable.
 #
 #EBASE = Add
 ### this has no main EBASE = ComputeAmrDataNorms
-EBASE = ComparePlotfiles
+# EBASE = ComparePlotfiles
+EBASE = GenerateHDF5
 #EBASE = DiffFab
 #EBASE = DiffSameDomainRefined
 #EBASE = DiffSameDomainRefinedComposite
